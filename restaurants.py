@@ -19,7 +19,7 @@ class Restaurant:
 
     @classmethod#modify atributes let them alternete tha class state(classmethod)
     def list_restaurants(cls):
-        print(f'{'Restaurant Name'.ljust(25)} | {'Category'.ljust(25)} | {'Status'.ljust(25)} | {'Avaliations'}')
+        print(f"{'Restaurant Name'.ljust(25)} | {'Category'.ljust(25)} | {'Status'.ljust(25)} | {'Avaliations'.ljust(25)}")
         for restaurant in cls.restaurants:
             print(f'{restaurant._name.ljust(25)} | {restaurant._category.ljust(25)} | {restaurant.active.ljust(25)} | {restaurant.avarege_avaliation}')
 

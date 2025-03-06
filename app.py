@@ -1,15 +1,16 @@
 from restaurants import Restaurant
+from menu.dishes import Dishes
+from menu.beers import Beers
 
 restaurant_square = Restaurant('Square', 'Gourmet')#this is a instance for the class restaurant
-restaurant_pizza = Restaurant('Pizza','Italian' )
-restaurant_pizza.recive_avaliations('Victor', 10)
-
-restaurant_pizza.alternate_state()
+beer = Beers('Water', 5.00, 'Big bottle')
+dish = Dishes('Rice', 15.00, 'White rice')
 
 
 
 def main():
-    Restaurant.list_restaurants()
+    print(beer)
+    print(dish)
 
 if __name__ == '__main__':
     main() 
